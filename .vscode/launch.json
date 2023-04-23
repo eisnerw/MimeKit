@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/samples/ParseMessage/bin/Debug/net6.0/ParseMessage.dll",
+            "program": "${workspaceFolder}/samples/ParseMessage/bin/Debug/net7.0/ParseMessage.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
