@@ -25,7 +25,7 @@
     <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
     <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
     <RootNamespace>MimeKit</RootNamespace>
-    <DefineConstants>$(DefineConstants);ENABLE_CRYPTO;ENABLE_SNM</DefineConstants>
+    <DefineConstants>$(DefineConstants);ENABLE_SNM</DefineConstants>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <AssemblyOriginatorKeyFile>mimekit.snk</AssemblyOriginatorKeyFile>
     <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>

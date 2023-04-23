@@ -35,5 +35,4 @@ public class ParseMessage
         }
         var partsArray = parts.ToArray();
     }
-
 }
