@@ -17,20 +17,23 @@ public class ParseMessage
         var message = MimeMessage.Load (path);
         var attachments = new List<MimePart> ();
         var multiparts = new List<Multipart> ();
+        var parts = new List<MimePart> ();
         var iter = new MimeIterator (message);
 
         // collect our list of attachments and their parent multiparts
         while (iter.MoveNext ()) {
             var multipart = iter.Parent as Multipart;
             var part = iter.Current as MimePart;
-
+            if (part != null){
+                parts.Add(part);
+            }
             if (multipart != null && part != null && part.IsAttachment) {
                 // keep track of each attachment's parent multipart
                 multiparts.Add (multipart);
                 attachments.Add (part);
             }
         }
-
+        var partsArray = parts.ToArray();
     }
 
 }
